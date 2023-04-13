@@ -34,7 +34,7 @@
 
 ## Our Approach to Challenge #1: Restricted Operations
 
-- We introduce the **modes**, _kernel mode_ and _åuser mode_
+- We introduce the **modes**, _kernel mode_ and _user mode_
   - In user mode, we restrict what the program can do
   - In kernel mode, we allow program to do whatever it wants, including privileged operations
 
@@ -47,7 +47,7 @@
   3.  the system performs privileged operations (if allowed)
   4.  the OS calls a special **return-from-trap instruction** to user program when it finishes and reduces the privilege level to user mode
 
-### Trap Table
+### Trap Table (Interrupt Table)
 
 - In a system call, the trap gets the code from a map (trap table) mapping from a number (system-call number) to a set of instructions (trap handlers)
   - We can't let call processes (user programs) decide what to run in system calls.
