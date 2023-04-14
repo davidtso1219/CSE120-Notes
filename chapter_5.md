@@ -179,8 +179,7 @@ $ >
 #include <assert.h>
 #include <sys/wait.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     int rc = fork();
 
     if (rc < 0) {
