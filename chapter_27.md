@@ -178,6 +178,7 @@ pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 ```
 
 ```c
+pthread_mutex_t lock;
 int rc = pthread_mutex_init(&lock, NULL);
 assert(rc == 0); // always check success!
 ```
