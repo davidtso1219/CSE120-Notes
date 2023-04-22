@@ -127,6 +127,19 @@ int get(counter_t *c) {
 
 ```
 
+### Approximate Counters Example Timeline
+
+| Time | $L_1$             | $L_2$ | $L_3$ | $L_4$             | $G$ |
+| ---- | ----------------- | ----- | ----- | ----------------- | --- |
+| 0    | 0                 | 0     | 0     | 0                 | 0   |
+| 1    | 0                 | 0     | 1     | 1                 | 0   |
+| 2    | 1                 | 0     | 2     | 1                 | 0   |
+| 3    | 2                 | 0     | 3     | 1                 | 0   |
+| 4    | 3                 | 0     | 3     | 2                 | 0   |
+| 5    | 4                 | 1     | 3     | 3                 | 0   |
+| 6    | 5 $\rightarrow$ 0 | 1     | 3     | 4                 | 5   |
+| 7    | 0                 | 2     | 4     | 5 $\rightarrow$ 0 | 5   |
+
 ## Concurrent Linked Lists
 
 - We can utilize the basic approach again
