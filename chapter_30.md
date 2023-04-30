@@ -265,7 +265,7 @@ void *producer(void *arg) {
   int i;
   for (i = 0; i < loops; i++) {
     Pthread_mutex_lock(&mutex);
-    while (count == 1)
+    while (count == MAX)
         Pthread_cond_wait(&empty, &mutex);
     put(i);
     Pthread_cond_signal(&fill);

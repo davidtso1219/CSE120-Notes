@@ -1,4 +1,4 @@
-# Chapter 30
+# Chapter 31
 
 ## Semaphore
 
