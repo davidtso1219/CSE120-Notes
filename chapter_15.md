@@ -27,8 +27,6 @@
 
 - Virtual Memory (Process Point of View)
 
-<!-- ![image](/images/15_1.png) -->
-
 <img src="images/15_1.png" height="500ch" alt="Virtual Memory Demo"></img>
 
 - Physical Memory (OS Point of View)
