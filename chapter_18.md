@@ -6,6 +6,12 @@
 - Thus, we consider another approach, chopping the address space into a fixed-sized pieces, which is called **pages**
 - Corresphondly, the physical memory as an array of pages can be called **page frames**
 
+### Page Table
+
+- a _per-process_ data structure to store **address translations** for mapping virtual page number to physical page number
+- an entry in the page table is called **page table entry**
+- an entry would store the information including PFN, useful bits such as valid bit, dirty bit, etc.
+
 ### Translation
 
 - To translate this virtual address that the process generated, we have to use two components:
@@ -112,8 +118,7 @@ for (i = 0; i < 1000; i++)
 
 ## Keywords
 
-1. Page Table: a _per-process_ data structure to store **address translations** for mapping virtual page number to physical page number
-2. Virtual Page Number (VPN): the number of the virtual page
-3. Physical Frame Number (PFN): the number of the physical page, also known as the physical page number (PPN)
-4. Page Table Entry (PTE): an entry in the page table
-5. Swap: swapping parts of the address space that are rarely used to the disk
+1. Virtual Page Number (VPN): the number of the virtual page
+2. Physical Frame Number (PFN): the number of the physical page, also known as the physical page number (PPN)
+3. Page Table Entry (PTE): an entry in the page table
+4. Swap: swapping parts of the address space that are rarely used to the disk
