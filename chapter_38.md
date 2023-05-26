@@ -247,7 +247,7 @@ rename("foo.txt.tmp", "foo.txt");
 
 ## Soft Link
 
-- There are some limitation in hard links (e.g. we can't hard link files in other disk partitions)
+- There are some limitation in hard links (e.g. we can't hard link files in other disk partitions, we can't hard link to directory (loop))
 - Thus, we have a new type of link called symbolic link, or soft link
 - A symbolic link is actually a file with a differt type (a symbolic link type)
 - A symbolic link file is simply formed by holding the pathname of the linked file as the content
